@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+    <style>
+        body {
+            background: white;
+            color:black;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var quebrada = false;
+        function mudarLampada(tipo, mensagem) {
+            if (quebrada == false) {
+                document.getElementById("lampada").src="_imagens/" + tipo + ".jpg"
+                var h1 = document.getElementById("titulo")
+                h1.innerHTML = mensagem
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                    h1.style.color = "red"
+                }
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="lampada" onmousemove="mudarLampada('lampada-acesa','Apague a lâmpada')" onmouseout="mudarLampada('lampada-apagada', 'Acenda a lâmpada')" onclick="mudarLampada('lampada-quebrada', 'Você quebrou a lâmpada!')"/> 
+</body>
+</html>
+
