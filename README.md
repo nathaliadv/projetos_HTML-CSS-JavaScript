@@ -1,2 +1,2 @@
-# projetos_JavaScript
- Pequenos projetos em JavaScript realizados com a finalidade de aprendizado
+# projetos_HTML+CSS+JavaScript
+ Pequenos projetos utilizando HTML, CSS e JavaScript, realizados com a finalidade de aprendizado
