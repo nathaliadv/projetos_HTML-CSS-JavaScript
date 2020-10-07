@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function mudarFundo(tipo, cor, mensagem)  {
+                document.getElementById("botao").src= "./" + tipo + ".png";
+                let fundo = document.getElementById("corpo");
+                fundo.style.backgroundColor = cor;
+                var h1 = document.getElementById("titulo")
+                h1.innerHTML = mensagem
+            }
+        </script>
+    </head>
+    <body id="corpo" style="background-color: black;"> 
+
+        <h1 id="titulo" style="text-align: center; color: white; text-shadow: 1px 1px gray; margin-top: 10%;">Acenda a luz!</h1>
+        <img src="./interruptor-apagada.png" id="botao" style="margin-left: 43%;" onmousemove="mudarFundo('interruptor-acesa', '#f5f660', 'Obaa! Estava muito escuro!')" onmouseout="mudarFundo('interruptor-apagada', 'black', 'Acenda a luz!')">
+
+    </body>
+</html>
