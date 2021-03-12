@@ -1,0 +1,22 @@
+É necessário abrir uma conexão com a API onde estão cadastrados os dados dos usuários para que eles
+sejam exibidos na lista de clientes(html).
+Será usado o AJAX para fazer a comunicação entre a aplicação e a API para obter os dados.
+Na pasta service estará tudo que tem relação com a comunicação com a API. 
+
+Usamos o json-server para simular a API: npx json-server --watch db.json.
+
+Callback é uma função que é passada como argumento para uma outra função e, geralmente, só e executado
+quando alguma operação é concluída ou quando um evento específico ocorre. O cenário de uso mais comum é, 
+certamene, quando requisições Ajax são finalizadas.
+Para evitar callbacks aninhados usa-se as Promises.
+Promises são promessas que são retornadas em uma requisição. 
+
+A Fetch substitui utilizar tanto a promise quanto o http (ver o arquivo com primeira versão cliente-service)
+
+
+Ambiente JS:
+No ambiente terá
+- pilha de execução (que vai executar o código JS)
+- pilha de memória (que vai pegar nome de variável, de objeto, vai guardar as funções)
+- motor JS (que vai transformar o que escrevemos em código de máquina)
+
